@@ -1,0 +1,30 @@
+{
+  "system_status": "ONLINE",
+  "active_guardrails": "ENFORCED",
+  "telemetry_summary": {
+    "total_scans": 1420,
+    "threats_blocked": 18,
+    "containers_isolated": 2,
+    "solvency_protection_usd": 250000.00
+  },
+  "recent_events": [
+    {
+      "event_id": "EVT-9021",
+      "timestamp": "2026-11-23T07:45:10Z",
+      "type": "INDIRECT_RAG_INJECTION",
+      "severity": "CRITICAL",
+      "agent": "PDF_Summarizer_Agent",
+      "action": "CONTAINED (docker pause)",
+      "impact": "Exfiltration of API keys blocked"
+    },
+    {
+      "event_id": "EVT-9020",
+      "timestamp": "2026-11-23T06:12:33Z",
+      "type": "FORBIDDEN_COMMAND_INTERCEPT",
+      "severity": "HIGH",
+      "agent": "Data_Fetcher_Agent",
+      "action": "BLOCKED",
+      "impact": "Destructive shell execution prevented"
+    }
+  ]
+}

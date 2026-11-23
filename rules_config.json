@@ -1,0 +1,27 @@
+{
+  "project_name": "GuardCorp AI",
+  "version": "1.0.0",
+  "strictness_level": "HIGH",
+  "blacklist_patterns": [
+    "ignore previous instructions",
+    "disregard prior prompts",
+    "system prompt",
+    "admin override",
+    "exfiltrate",
+    "chmod 777",
+    "eval\\(base64"
+  ],
+  "forbidden_commands": [
+    "rm -rf",
+    "drop table",
+    "chmod 777",
+    "curl -X POST -d",
+    "nc -e",
+    "/etc/passwd"
+  ],
+  "thresholds": {
+    "max_risk_score_allowed": 0.45,
+    "auto_containment_threat_level": "HIGH",
+    "token_revocation_on_critical": true
+  }
+}
